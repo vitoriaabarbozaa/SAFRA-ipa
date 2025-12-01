@@ -28,10 +28,15 @@ const Sucesso = () => {
             Acompanhe a situação do seu pedido na página de <span className="font-semibold italic">Rastreio</span>
           </p>
 
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             <Link to="/solicitar/dados-agricultor">
               <Button variant="outline" className="bg-white text-primary hover:bg-white/90">
-                NOVA SOLI
+                NOVA SOLICITAÇÃO
+              </Button>
+            </Link>
+            <Link to="/solicitacoes">
+              <Button variant="outline" className="bg-white text-primary hover:bg-white/90">
+                VER TODAS
               </Button>
             </Link>
             <Link to="/rastreamento">
