@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -83,7 +83,7 @@ const Login = () => {
                 ENTRAR
               </Button>
 
-              <div className="text-center">
+              <div className="flex justify-center items-center gap-4">
                 <button 
                   type="button" 
                   className="text-sm text-primary hover:underline"
@@ -91,6 +91,13 @@ const Login = () => {
                 >
                   Esqueci a senha
                 </button>
+                <span className="text-muted-foreground">|</span>
+                <Link 
+                  to="/cadastro" 
+                  className="text-sm text-primary hover:underline font-medium"
+                >
+                  Cadastre-se
+                </Link>
               </div>
             </form>
           </div>
